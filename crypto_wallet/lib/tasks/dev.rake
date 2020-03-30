@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner("Drop database...")            { %x(rails db:drop) }
       show_spinner("Create database...")          { %x(rails db:create) }
       show_spinner("Migrate database...")         { %x(rails db:migrate) }
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "You need to be on development environment to perform this task"
     end
@@ -15,30 +15,36 @@ namespace :dev do
   desc "Create coins"
   task add_coins: :environment do
     show_spinner("Creating coins...") do
+      all_mining_types = MiningType.all
       coins = [{  
                   description: "Bitcoin", 
                   acronym: "BTC",
-                  url_image: "https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png"
+                  url_image: "https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png",
+                  mining_type: all_mining_types.sample
                   },
                   {
                   description: "Ethereum",
                   acronym: "ETH",
-                  url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/628px-Ethereum_logo_2014.svg.png"
+                  url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/628px-Ethereum_logo_2014.svg.png",
+                  mining_type: all_mining_types.sample
                   }, 
                   {   
                   description: "Dash",
                   acronym: "DASH",
-                  url_image: "https://pngimage.net/wp-content/uploads/2018/05/dash-coin-logo-png-6.png"
+                  url_image: "https://pngimage.net/wp-content/uploads/2018/05/dash-coin-logo-png-6.png",
+                  mining_type: all_mining_types.sample
                   }, 
                   {   
                   description: "Iota",
                   acronym: "IOT",
-                  url_image: "https://criptohub.com.br/assets/svg/svg008.svg"
+                  url_image: "https://criptohub.com.br/assets/svg/svg008.svg",
+                  mining_type: all_mining_types.sample
                   }, 
                   {   
                   description: "ZCash",
                   acronym: "ZEC",
-                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png"
+                  url_image: "https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png",
+                  mining_type: all_mining_types.sample
               }]
 
       coins.each do |coin|
