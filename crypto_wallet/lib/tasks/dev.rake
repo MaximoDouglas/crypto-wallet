@@ -56,6 +56,9 @@ namespace :dev do
                     }, {
                       description: "Proof of Stake",
                       acronym: "PoS"
+                    }, {
+                      description: "Proof of Capacity",
+                      acronym: "PoC"
                     }]
 
       mining_types.each do |mining_type|
