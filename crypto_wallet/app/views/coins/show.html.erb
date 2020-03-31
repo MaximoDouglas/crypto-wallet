@@ -16,7 +16,7 @@
 <% end if @coin.url_image? -%>
 
 <%= content_tag :p do -%>
-  <strong>Mining type:</strong>
+  <strong><%= t('activerecord.attributes.coin.mining_type')%>: </strong>
   <%= @coin.mining_type.description %>
 <% end if @coin.mining_type_id? -%>
 
