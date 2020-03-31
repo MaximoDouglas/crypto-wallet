@@ -1,0 +1,7 @@
+pt-BR:
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+  alerts:
+    are_you_sure: "Tem certeza?"
