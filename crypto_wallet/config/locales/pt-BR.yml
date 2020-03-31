@@ -5,3 +5,6 @@ pt-BR:
     delete: "Apagar"
   alerts:
     are_you_sure: "Tem certeza?"
+  welcome_page:
+    portuguese_link: "Português"
+    english_link: "Inglês"

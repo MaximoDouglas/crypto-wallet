@@ -1,4 +1,6 @@
 <h1>Seja bem-vindo<%= name_on_title %></h1>
+<p> <%= link_to t('welcome_page.portuguese_link'), root_path(locale: "pt-BR") %> </p>
+<p> <%= link_to t('welcome_page.english_link'), root_path(locale: "en") %> </p>
 
 <p>
     <strong> <%= application_name %> </strong>

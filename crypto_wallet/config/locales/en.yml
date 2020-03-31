@@ -37,3 +37,6 @@ en:
     delete: "Delete"
   alerts:
     are_you_sure: "Are you sure?"
+  welcome_page:
+    portuguese_link: "Portuguese"
+    english_link: "English"
