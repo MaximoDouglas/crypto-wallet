@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p><strong>Data: </strong> <%= l(Date.today) %> </p>
-<h1>Moedas</h1>
+<h1><%= @coins.model_name.human(count: @coins.count) %></h1>
 
 <table class="table table-hover">
   <thead>
