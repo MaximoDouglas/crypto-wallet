@@ -1,11 +1,8 @@
-<h1>Seja bem-vindo<%= name_on_title %></h1>
-<p> <%= link_to t('welcome_page.portuguese_link'), root_path(locale: "pt-BR") %> </p>
-<p> <%= link_to t('welcome_page.english_link'), root_path(locale: "en") %> </p>
-
-<p>
-    <strong> <%= application_name %> </strong>
-</p>
-<p>
-    <strong>Data: </strong> <%= l(Date.today) %> 
-</p>
-<%= render 'menu' %>
+<div class="jumbotron">
+  <h1 class="display-4"><%=t('welcome_page.welcome')%></h1>
+  <p class="lead"><%=t('welcome_page.description')%></p>
+  <hr class="my-4">
+  <p><%=t('welcome_page.menu_description')%>:</p>
+  
+  <%= render 'menu' %>
+</div>

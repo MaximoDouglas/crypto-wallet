@@ -3,7 +3,7 @@
 <p><strong>Data: </strong> <%= l(Date.today) %> </p>
 <h1>Moedas</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @coins.human_attribute_name(:description) %></th>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Coin', new_coin_path %>
+<%= link_to t('links.new'), new_coin_path, class:"btn btn-primary" %>

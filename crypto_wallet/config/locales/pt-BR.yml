@@ -3,8 +3,13 @@ pt-BR:
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
+    new: "Nova"
   alerts:
     are_you_sure: "Tem certeza?"
-  welcome_page:
+  application_lang:
     portuguese_link: "Português"
     english_link: "Inglês"
+  welcome_page:
+    welcome: "Seja Bem-Vindo"
+    description: "Esta é a Crypto Wallet, uma aplicação para cadastro e acompanhamento das suas cripto moedas."
+    menu_description: "Para começar, selecione uma das opções abaixo"

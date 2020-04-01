@@ -30,13 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
   links:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
+    new: "New"
   alerts:
     are_you_sure: "Are you sure?"
-  welcome_page:
+  application_lang:
     portuguese_link: "Portuguese"
     english_link: "English"
+  welcome_page:
+    welcome: "Welcome"
+    description: "This is the Crypto Wallet, an app to register and keep you updated about your crypto coins."
+    menu_description: "To start, select one of the options below"
