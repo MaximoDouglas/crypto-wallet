@@ -12,6 +12,9 @@
   <body>
   <ul class="nav justify-content-end">
     <li class="nav-item">
+      <%= link_to 'HOME', root_path(:locale => params[:locale]), class:"nav-link" %>
+    </li>
+    <li class="nav-item">
       <%= link_to t('application_lang.portuguese_link'), url_for(:locale => "pt-BR"), class:"nav-link" %>
     </li>
     <li class="nav-item">
