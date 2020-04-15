@@ -6,7 +6,7 @@ Repository of study projects using Ruby on Rails.
 It is a full-stack project, which implements basic CRUD features on Cripto Coins, as well as its Mining Types. The goal of this project is to agregate basic conceptos on Ruby on Rails development, creating an app to register the user cripto coins wallet. 
 
 ### notebook-api
-It is an API-only project which implements a CRUD-like contacts notebook application. The goal of this project is to use intermediate and advanced concepts on RESTful apis with Ruby on Rails, as well as Capybara and Rspec test.
+It is a API-only project which implements a CRUD-like contacts notebook application. The goal of this project is to use intermediate and advanced concepts on RESTful apis with Ruby on Rails, as well as Capybara and Rspec test.
 
 #### Run project
 - Enter fold crypto_wallet
