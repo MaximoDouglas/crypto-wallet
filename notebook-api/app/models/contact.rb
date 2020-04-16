@@ -13,8 +13,13 @@ class Contact < ApplicationRecord
     def as_json(options={})
         super(
             root: true,
-            include: { kind: { only: :description } },
-            methods: [:kind_description, :author]
-            )
+            include: { 
+                kind: { only: :description }, 
+                phones: { only: :number } 
+            },
+            methods: [
+                :kind_description, 
+                :author
+            ])
     end
 end

@@ -41,6 +41,9 @@ group :development do
 
   #To generate fake data
   gem 'faker'
+
+  # Rails >= 3 pry initializer
+  gem 'pry-rails'
 end
 
 
