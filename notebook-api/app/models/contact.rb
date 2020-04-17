@@ -21,7 +21,7 @@ class Contact < ApplicationRecord
             include: { 
                 kind: { only: :description }, 
                 phones: {},
-                address: { except: [:created_at, :updated_at] }
+                address: { except: [:id, :created_at, :updated_at] }
             },
             methods: [
                 :kind_description, 
