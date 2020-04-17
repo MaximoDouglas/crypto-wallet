@@ -1,8 +1,12 @@
 class Contact < ApplicationRecord
     belongs_to :kind, optional: true
-    has_many   :phones
     
+    has_many   :phones
     accepts_nested_attributes_for :phones, allow_destroy: true
+    
+    has_one    :address
+    accepts_nested_attributes_for :address
+    
 
     def author
         "Doug"
@@ -17,7 +21,8 @@ class Contact < ApplicationRecord
             root: true,
             include: { 
                 kind: { only: :description }, 
-                phones: { } 
+                phones: {},
+                address: { except: [:created_at, :updated_at] }
             },
             methods: [
                 :kind_description, 
