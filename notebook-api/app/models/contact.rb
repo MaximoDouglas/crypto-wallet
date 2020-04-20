@@ -5,7 +5,7 @@ class Contact < ApplicationRecord
     accepts_nested_attributes_for :phones, allow_destroy: true
     
     has_one    :address
-    accepts_nested_attributes_for :address
+    accepts_nested_attributes_for :address, update_only: true
 
     def author
         "Doug"
@@ -21,7 +21,7 @@ class Contact < ApplicationRecord
             include: { 
                 kind: { only: :description }, 
                 phones: {},
-                address: { except: [:id, :created_at, :updated_at] }
+                address: { except: [:created_at, :updated_at] }
             },
             methods: [
                 :kind_description, 
