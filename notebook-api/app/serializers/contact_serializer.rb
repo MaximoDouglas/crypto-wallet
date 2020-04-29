@@ -5,7 +5,7 @@ class ContactSerializer < ActiveModel::Serializer
   has_one  :address
 
   belongs_to :kind do 
-    link(:related) { kind_url(object.kind.id) }
+    link(:related) { contact_kind_url(object.id) }
   end
 
   meta do 
