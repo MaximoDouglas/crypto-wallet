@@ -1,0 +1,22 @@
+en:
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    back: "Back"
+  alerts:
+    are_you_sure: "Are you sure?"
+  application_lang:
+    portuguese_link: "Portuguese"
+    english_link: "English"
+  welcome_page:
+    welcome: "Welcome"
+    description: "This is the Crypto Wallet, an app to register and keep you updated about your crypto coins."
+    menu_description: "To start, select one of the options below"
+  coin:
+    new: "New coin"
+    editing: "Editing coin"
+    select_mining_type: "-- Select mining type --"
+  mining_type:
+    new: "New mining type"
+    editing: "Editing mining type"
